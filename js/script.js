@@ -28,7 +28,14 @@ $(function () {
                 self.removeColumn();
             });
             $columnAddCard.click(function (event) {
-                self.addCard(new Card(prompt("Enter the name of the card")));
+                                
+                var name = prompt("Enter the name of the card");
+                if (name === "" || name === null) {
+                    alert("Please give a card name !") 
+                }
+                else {                
+                    self.addCard(new Card(name))
+                }
             });
 
             // CONSTRUCTION COLUMN ELEMENT
@@ -103,9 +110,15 @@ $(function () {
     $('.create-column')
         .click(function () {
             var name = prompt('Enter a column name');
-            var column = new Column(name);
-            board.addColumn(column);
+            if (name === "" || name === null) {
+                alert("Please give a column a name !") 
+            }
+            else {                
+                var column = new Column(name);
+                board.addColumn(column)
+            }
         });
+     
 
     // CREATING COLUMNS
     var todoColumn = new Column('To do');

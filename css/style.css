@@ -1,0 +1,49 @@
+body {
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.column-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #23995e;
+}
+
+.column {
+  width: 300px;
+  background-color: lightblue;
+  margin: 2px;
+  border-radius: 5px;
+}
+
+.create-column {
+  padding: 10px;
+  margin: 15px;
+  background-color: blue;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.column-title {
+  color: #22041f;
+}
+
+.add-card {
+  color: white;
+  background-color: #52064a;
+}
+
+.card {
+  margin: 2px;
+}
+
+ul {
+  list-style-type: none;
+}
+/*# sourceMappingURL=style.css.map */
